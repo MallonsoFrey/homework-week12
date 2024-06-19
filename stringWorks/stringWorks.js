@@ -1,5 +1,5 @@
-const textElement = document.querySelector('.text');
-const text = textElement.textContent.trim(); 
+const textElement = document.querySelector('.text'); //получаем элемент
+const text = textElement.textContent.trim(); //получаем его контент
 const result = text.replace(/;/g, '\n');
 const substring = result.replace(/\s/g, '');
 const newText = substring.slice(28, 50); //в задании берётся переменная result, но в ней нет ни одного слова "клён", поэтому взяла substring
